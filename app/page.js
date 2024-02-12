@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
+import Searchbar from "./Searchbar";
+import Footer from "./Footer";
+import Rowartical from "./Rowartical";
+
 
 function page() {
   return (
-    <div>
-       hello word
-    </div>
-  )
+    <>
+      <Header />
+      <Searchbar />
+      <Rowartical />
+      <Footer />
+    </>
+  );
 }
-
-export default page
+export default page;

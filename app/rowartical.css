@@ -1,0 +1,33 @@
+.artical_img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .artical_title{
+    font-family: Inknut Antiqua;
+    margin-bottom: 16px;
+    font-weight:600;
+    font-size:18px;
+    color: #3C3030;
+  
+  }
+  
+  .artical_paragraph {
+    width:100%;
+    opacity: 80%;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #3C3030;
+  }
+  
+  .anchor_tag{
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #3C3030;
+  }
+  
+  
