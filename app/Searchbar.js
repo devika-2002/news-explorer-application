@@ -4,7 +4,7 @@ function Searchbar() {
   return (
     <>
       <div className="container">
-        <div className="row searchbar_row">
+        <div className="searchbar_row">
           <form>
             <div className="search_box">
               <img className="img_search" src="Frame.png" alt="Search" />

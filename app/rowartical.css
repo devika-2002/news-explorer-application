@@ -4,12 +4,17 @@
   }
   
   .artical_title{
+    /* width: 250px;
+    height: 88px;
+    line-height: 21px;
+    letter-spacing: -4%; */
+
     font-family: Inknut Antiqua;
     margin-bottom: 16px;
     font-weight:600;
     font-size:18px;
+
     color: #3C3030;
-  
   }
   
   .artical_paragraph {
