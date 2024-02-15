@@ -9,16 +9,16 @@
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
 }
 
-.heading{
+.heading {
   color: #e84848;
 }
 
-.artical-box{
+.artical-box {
   height: 408px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
 }
 
 .footer {
@@ -31,6 +31,7 @@
     font-size: 35px;
     line-height: 50px;
   }
+
   .image {
     width: 25px;
     height: 25px;
@@ -40,10 +41,12 @@
   .container {
     width: 364px;
   }
+
   .box-size {
     width: 364px;
     height: 408px;
   }
+
   .footer {
     margin: auto;
   }

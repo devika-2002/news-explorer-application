@@ -1,16 +1,22 @@
 import React from "react";
 import Header from "./Header";
-import Searchbar from "./Searchbar";
+import Search_bar from "./Search_bar";
+import Row_articles from "./Row_articles";
 import Footer from "./Footer";
-import Rowartical from "./Rowartical";
 
 
 function page() {
   return (
     <>
       <Header />
-      <Searchbar />
-      <Rowartical />
+      <Search_bar />
+      <div className="container">
+        <div className="row">
+          <Row_articles />
+          <Row_articles />
+          <Row_articles />
+        </div>
+      </div>
       <Footer />
     </>
   );
