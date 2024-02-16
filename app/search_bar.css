@@ -28,12 +28,13 @@
   ;
 }
 
-.button {
+.Button{
   width: 61px;
   height: 61px;
   background: #E84848;
   border: none;
   padding: 10px;
+  font-size:17px;
 }
 
 .artical-heading {

@@ -10,7 +10,7 @@ function Search_bar() {
             <div className="search-box">
               <img className="img-search" src="Frame.png" alt="Search" />
               <input className="input-box" type="text" placeholder="Search" />
-              <button className="button  text-white" type="submit">GO</button>
+              <button className="Button  text-white" type="submit">Go</button>
             </div>
           </form>
         </div>
