@@ -12,9 +12,9 @@ function page() {
       <Search_bar />
       <div className="container">
         <div className="row">
-          <Row_articles />
-          <Row_articles />
-          <Row_articles />
+          <Row_articles/>
+          <Row_articles/>
+          <Row_articles/>
         </div>
       </div>
       <Footer />
