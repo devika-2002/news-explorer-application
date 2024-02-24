@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
     return (
         <>
-            <div className="container mt-5">
+            <div className="container mt-2">
                 <div className="row ">
                     <div className="text">
                         <span>NewsAPI</span>

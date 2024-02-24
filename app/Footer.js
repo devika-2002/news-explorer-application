@@ -10,7 +10,13 @@ function Footer() {
                     <div className=" mb-5  footer-size">
                         <span>NewsAPI</span>
                         <img className="footer" src=" Ellipse 1.svg"></img>
-                        <span>Org</span>is not responsible for the content of external sites
+                        <span>Org</span>
+                        <br />
+                        <span>is not responsible for</span>
+                        <br/>
+                        <span>the content of external</span>
+                        <br/>
+                        <span>sites</span>
                     </div>
                 </div>
             </div>
