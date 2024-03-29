@@ -2,7 +2,6 @@ import React from "react";
 import "./article.css"
 
 const Article= ({ article }) => {
-
     return (
         <>
             <div className=" col-md-4  artical-box">
@@ -15,7 +14,4 @@ const Article= ({ article }) => {
     )
 }
 export default Article;
-
-
-
 
