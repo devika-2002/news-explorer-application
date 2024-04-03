@@ -45,3 +45,4 @@ export const articles= [
         "description": "The workers were stuck for two weeks after a part of a tunnel they were working in collapsed.",
     },
 ]
+

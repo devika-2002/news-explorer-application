@@ -1,35 +1,23 @@
-"use client"
+
 
 import React, { useState } from "react";
 import "./search_bar.css";
 
 function SearchBar() {
     const [input, setInput] = useState("");
-    
-    const handleSearch= () =>{
-        const apiKey = '69c7f892cd89443f8cd4e75d3aa7e2b4';
-        const articlesArray=[]
-        fetch(`https://newsapi.org/v2/everything?q=${input}&apiKey=${apiKey}`)
-            .then(response =>response.json())
-            .then(function (data){
-                    const articles = data.articles;
-                    for (let i = 0; i < articles.length; i++) {
-                      const article = articles[i];
-                      const articleObject = {
-                        image: article.urlToImage,
-                        title: article.title,
-                        description: article.description,
-                        url: article.url
-                      };
-                      articlesArray.push(articleObject);
-                    }
-                    console.log(articlesArray)
+    const [articles, setArticles] = useState([]);
 
+    const handleSearch = () => {
+        const apiKey = '69c7f892cd89443f8cd4e75d3aa7e2b4';
+        fetch(`https://newsapi.org/v2/everything?q=${input}&apiKey=${apiKey}`)
+            .then(response => response.json())
+            .then((data) => {
+                setArticles(data.articles);
+            })
             .catch(error => {
                 console.error('There was a problem with your fetch operation:', error);
-            })
-        });
-    }
+            });
+    };
 
     return (
         <div className="container">
@@ -41,7 +29,7 @@ function SearchBar() {
                         type="text"
                         placeholder="Search"
                         value={input}
-                        onChange={(e)=>setInput(e.target.value)}
+                        onChange={(e) => setInput(e.target.value)}
                     />
                     <button onClick={handleSearch} className="Button text-white" type="submit">Go</button>
                 </div>
