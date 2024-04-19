@@ -11,9 +11,9 @@ function SearchBar() {
         const articlesArray=[]
         fetch(`https://newsapi.org/v2/everything?q=${input}&apiKey=${apiKey}`)
             .then(response =>response.json())
-            .then((data)=>{
-                if (!data.ok) {
-                    const articles = data.articles;
+            .then((response)=>{
+                if (!response.ok) {
+                    const articles =response.articles;
                     for (let i = 0; i < articles.length; i++) {
                         const article = articles[i];
                         const articleObject = {
@@ -31,7 +31,6 @@ function SearchBar() {
                 console.error('There was a problem with your fetch operation:', error);
             })
     }
-      
     return (
         <div className="container">
             <div className="searchbar-row">
