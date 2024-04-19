@@ -11,26 +11,27 @@ function SearchBar() {
         const articlesArray=[]
         fetch(`https://newsapi.org/v2/everything?q=${input}&apiKey=${apiKey}`)
             .then(response =>response.json())
-            .then(function (data){
+            .then((data)=>{
+                if (!data.ok) {
                     const articles = data.articles;
                     for (let i = 0; i < articles.length; i++) {
-                      const article = articles[i];
-                      const articleObject = {
+                        const article = articles[i];
+                        const articleObject = {
                         image: article.urlToImage,
                         title: article.title,
                         description: article.description,
                         url: article.url
-                      };
-                      articlesArray.push(articleObject);
+                        };
+                        articlesArray.push(articleObject);
                     }
                     console.log(articlesArray)
-
+                }
+            })
             .catch(error => {
                 console.error('There was a problem with your fetch operation:', error);
             })
-        });
     }
-
+      
     return (
         <div className="container">
             <div className="searchbar-row">
