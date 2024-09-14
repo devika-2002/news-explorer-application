@@ -1,13 +1,19 @@
-import React from 'react'
+
+import React from 'react';
 import Article from './Article';
 
-function Articles_row ({articles}) {
+function Articles_row({ articles }) {
     return (
-        <>
-            <Article article={articles[0]} />
-            <Article article={articles[1]} />
-            <Article article={articles[2]} />
-        </>
-    )
+        <div className="row">
+            {articles.length > 0 ? (
+                articles.map((article, index) => (
+                    <Article key={index} article={article} />
+                ))
+            ) : (
+                <p>No articles found.</p>
+            )}
+        </div>
+    );
 }
+
 export default Articles_row;

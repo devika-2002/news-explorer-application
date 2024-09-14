@@ -7,16 +7,11 @@ function Footer() {
 
             <div className="container mt-5 d-flex justify-content-center">
                 <div className="row ">
-                    <div className=" mb-5  footer-size">
-                        <span>NewsAPI</span>
+                    <div className=" mb-5  footer-container">
+                        <div>NewsAPI</div>
                         <img className="footer" src=" Ellipse 1.svg"></img>
-                        <span>Org</span>
-                        <br />
-                        <span>is not responsible for</span>
-                        <br/>
-                        <span>the content of external</span>
-                        <br/>
-                        <span>sites</span>
+                        <div>Org</div>
+                        <div className="footer-text">is not responsible for the content of external sites</div>                       
                     </div>
                 </div>
             </div>
