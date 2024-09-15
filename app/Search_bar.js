@@ -9,7 +9,8 @@ function Search_bar({ setSearch }) {
 
     const handleSearch = () => {
         const apiKey = '69c7f892cd89443f8cd4e75d3aa7e2b4';
-        fetch(`https://newsapi.org/v2/everything?q=${input}&apiKey=${apiKey}`)
+        
+        fetch(`https://newsapi.org/v2/everything?q=${input}&apiKey=${apiKey}`,{headers:{"Upgrade":"HTTP/2.0"}})
             .then(response => response.json())
             .then((data) => {
                 if (data.status === "ok") {

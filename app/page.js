@@ -7,8 +7,6 @@ import Articles_row from "./Articles_row";
 import Footer from "./Footer";
 import { articles } from "./data";
 
-// import { articles, articles as staticArticles } from "./data";
-
 function Page() {
     const [searchResults, setSearch] = useState([]);
 
